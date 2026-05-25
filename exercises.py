@@ -169,5 +169,4 @@ def basic_calculator(num1, num2, operation):
     else:
         return "Error: Invalid operation. Please choose 'add', 'subtract', 'multiply', or 'divide'."
 
-
 print('Exercise 9 Result:', basic_calculator(10, 5, "subtract"))
