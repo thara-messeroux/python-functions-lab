@@ -171,6 +171,3 @@ def basic_calculator(num1, num2, operation):
 
 
 print('Exercise 9 Result:', basic_calculator(10, 5, "subtract"))
- # elif vs if, what's the difference? 
- # Why do we use elif instead of multiple if statements in this function? 
- # when is it best to use if vs elif?
