@@ -124,16 +124,18 @@ print('Exercise 7:', calculate_tip(50, 20))
 # product(2, 5, 5) should return 50.
 #
 # Define the function and call it with different sets of numbers to test.
+# We use '*args' here instead of regular variables because the user can pass two, 
+# three, or twenty numbers. The '*' tells Python to pack all separate inputs 
+# into a single collection named 'args' so we can loop through them.
 def product(*args):
-    # Start at 1 because multiplying by 0 would always equal 0
+    # Start our multiplication total at 1 because multiplying by 0 would always equal 0
     result = 1
     
+    # 'args' acts as a tuple/list, allowing us to step through each number one-by-one
     # Loop through every number handed to the function
     for num in args:
-        result *= num  # Multiply the current number into our total
+        result *= num  # Multiply each number into our running total
         
     return result
 
 print('Exercise 8:', product(2, 5, 5))
-
-
