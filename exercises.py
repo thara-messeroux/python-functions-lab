@@ -77,7 +77,11 @@ print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 # sum_to(10) should return 55.
 #
 # Define the function and then call it below.
+
 def sum_to(n):
+    # range(1, n + 1) generates numbers from 1 up to n.
+    # We use 'n + 1' because Python naturally stops right before the final number.
+    # sum() then adds all those generated numbers together.
     return sum(range(1, n + 1))
 
 print('Exercise 5:', sum_to(6))
